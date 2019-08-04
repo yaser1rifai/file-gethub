@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Responsiv1styles.css">
+    <title>Responsive 1</title>
+    <style>
+    *{padding:0; margin:0;}
+ div{display:none;font-size: 100px;}
+ /* Big Tablet and Screen */
+ @media only screen and (min-width:1024px){
+     .d{display:block;}
+     div:not(d) {display:none;}
+ }
+
+  /* Small Tablet to Big Tablet , 768 to 1023 px */
+  @media only screen and (max-width:1023px) and (min-width:768px){
+    .c{display:block;}
+    div:not(c) {display:none;}
+}
+ 
+/* Small phones to small Tablet , 481 to 767 px */
+@media only screen and (max-width:767px) and (min-width:481px){
+    .b{display:block;}
+    div:not(b) {display:none;}
+}
+
+/* Small phones :from 0 to 480px */
+@media only screen and  (max-width:480px){
+    .a{display:block;}
+    div:not(a) {display:none;}
+}
+ 
+    </style>
+</head>
+<body>
+    <div class="a"> Iam a small phone</div>
+    <div class="b"> Iam a small phone or a a small tablet</div>
+    <div class="c"> Iam a small tablet or a big tablet</div>
+    <div class="d"> Iam a big tablet</div>
+</body>
+</html>

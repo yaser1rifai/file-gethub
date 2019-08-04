@@ -1,0 +1,17 @@
+p {
+  border-color: yellow;
+  border-width: 5px;
+  border-style: solid;
+  color: blue;
+  font-size: 50px;
+  font-family: "Roboto"; }
+
+.container {
+  border: 10px solid green;
+  padding: 30px;
+  box-shadow: 0 0 30px black; }
+
+.child {
+  border: 10px solid pink;
+  padding: 15px;
+  box-shadow: 0 0 30px black; }

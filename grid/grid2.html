@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grid2</title>
+    <style>
+        div{border:2px solid black; }
+
+    .container {display: grid; grid-gap:3px;
+     grid-template-columns:[first-fraction] 1fr [second]3fr [third]4fr [fourth]4fr [fifth];
+    grid-template-rows:[row1]40px [row2]200px [row3]30px [row4];background-color: white;}
+
+    .header{grid-column-start:first-fraction; grid-column-end:fifth; background-color: red;}
+    .menu{grid-column-start:fourth; grid-column-end:fifth; background-color: yellow;}
+    .content{grid-column-start:first-fraction; grid-column-end:fourth; grid-row:row2/row3;background-color: blanchedalmond;}
+    .footer{grid-column-start:first-fraction; grid-column-end:fifth;background-color: rgb(43, 226, 134);}
+
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="header">HEADER</div>
+       <div class="menu">MENU</div>
+       <div class="content">CONTENT</div>
+       <div class="footer">FOOTER</div>
+   </div> 
+</body>
+</html>

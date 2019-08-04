@@ -1,0 +1,16 @@
+body {
+    background-image: url("./cal.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+TD input,TH input{
+    width: 10vw;
+    height:10vh;
+}
+form{
+    position: absolute;
+    top:20vh;
+    left:27vw;
+   
+    
+}
